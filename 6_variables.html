@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css variables</title>
+    <style>
+        :root{
+            --primary-color: steelblue;
+            --lignt-color: #ffffff;
+            --secondary-color:skyblue;
+
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            background: var(--light-color);
+        }
+        header{
+            background-color: var(--primary-color);
+            color: var("--lignt-color");
+            text-align: center;
+            border-bottom: 5px var(--secondary-color) solid;
+            
+        }
+
+        .container{
+            display:flex;
+            margin: auto;
+            max-width:600px;
+           
+
+        }
+
+        .box{
+            background-color: var(--primary-color);
+            color: var("--lignt-color");
+            text-align: center;
+            border-bottom: 5px var(--secondary-color) solid;
+            padding:1rem;
+            margin:1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Css variables</h1>
+    </header>
+    <div class="container">
+        <div class="box box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, sed!</p>
+        </div>
+
+        <div class="box box-2">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, sed!</p>
+        </div>
+    </div>
+</body>
+</html>
